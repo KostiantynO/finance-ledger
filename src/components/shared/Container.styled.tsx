@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const FullWidth = styled.div`
   width: ${({ theme }) => theme.bp.mobile};
-  padding: 0 20px;
-  margin: 0 auto;
 
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     width: ${({ theme }) => theme.bp.tablet};
@@ -12,4 +10,9 @@ export const Container = styled.div`
   @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
     width: ${({ theme }) => theme.bp.desktop};
   }
+`;
+
+export const Container = styled(FullWidth)`
+  padding: 0 20px;
+  margin: 0 auto;
 `;
