@@ -1,0 +1,1 @@
+[vite-react-ts](https://blog.logrocket.com/vite-3-vs-create-react-app-comparison-migration-guide/)

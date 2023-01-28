@@ -1,4 +1,5 @@
-import { ChangeEvent, FormEvent, useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
+import { useState } from 'react';
 
 const encode = (data: Record<string, string>) => {
   return Object.keys(data)
@@ -25,7 +26,9 @@ export const ContactForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    post({ name, email, message }).catch(error => console.log(error));
+    post({ name, email, message })
+      .catch(alert)
+      .finally(() => setState(initState));
   };
 
   const handleChange = (
