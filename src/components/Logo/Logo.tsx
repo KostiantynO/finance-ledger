@@ -1,5 +1,3 @@
 import { LogoStyled } from './Logo.styled';
 
-export const Logo = () => {
-  return <LogoStyled />;
-};
+export const Logo = () => <LogoStyled />;

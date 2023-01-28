@@ -1,21 +1,6 @@
 import type { ChangeEvent, FormEvent } from 'react';
 import { useState } from 'react';
-
-const encode = (data: Record<string, string>) => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&');
-};
-
-type ContactFormPost = { name: string; email: string; message: string };
-
-const post = async ({ name, email, message }: ContactFormPost) => {
-  return await fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: encode({ 'form-name': 'contact', name, email, message }),
-  });
-};
+import { postContact } from 'features/contacts';
 
 const initState = { name: '', email: '', message: '' };
 
@@ -26,7 +11,7 @@ export const ContactForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    post({ name, email, message })
+    postContact({ name, email, message })
       .catch(alert)
       .finally(() => setState(initState));
   };
