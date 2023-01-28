@@ -46,3 +46,11 @@ yarn create @eslint/config
 #   stylelint-order \
 #   stylelint-config-rational-order)
 ```
+
+`2023-01-28 23:26`
+
+```bash
+yarn add -D babel-plugin-styled-components
+yarn add react-is
+npx mrm@2 lint-staged
+```
