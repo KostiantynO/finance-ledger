@@ -2,6 +2,7 @@ import {
   Hero,
   Solutions,
   Cases,
+  Blog,
   Gallery,
   Team,
   Callback,
@@ -14,6 +15,7 @@ export const Main = () => (
     <Hero />
     <Solutions />
     <Cases />
+    <Blog />
     <Gallery />
     <Team />
     <Callback />

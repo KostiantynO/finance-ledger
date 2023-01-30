@@ -1,12 +1,15 @@
+import { getRefs } from 'common/utils';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { App } from './App';
-import { getRefs } from './common/utils/getRefs';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRouter } from 'routes';
 
-const { root } = getRefs();
+const { app } = getRefs();
 
-createRoot(root).render(
+createRoot(app).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   </StrictMode>
 );

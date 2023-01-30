@@ -1,6 +1,6 @@
-const root = document.getElementById('root');
-if (!root) {
-  throw new Error('Please add <div id="root"> to index.html');
+const app = document.getElementById('app');
+if (!app) {
+  throw new Error('Please add <div id="app"> to index.html');
 }
 
 const modalRoot = document.getElementById('modal-root');
@@ -9,6 +9,6 @@ if (!modalRoot) {
 }
 
 export const getRefs = () => ({
-  root,
+  app,
   modalRoot,
 });

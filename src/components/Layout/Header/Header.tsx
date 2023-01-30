@@ -1,7 +1,13 @@
-import { Container } from 'components/shared';
+import { Logo } from 'components/Logo';
+import { Nav } from 'components/Nav';
+import { HeaderContainer, HeaderStyled } from './Header.styled';
 
 export const Header = () => (
-  <header>
-    <Container>HeaderContainer</Container>
-  </header>
+  <HeaderStyled>
+    <HeaderContainer>
+      <Logo />
+
+      <Nav />
+    </HeaderContainer>
+  </HeaderStyled>
 );

@@ -46,7 +46,7 @@ export const Team = () => (
   <Section>
     <div>
       <h3>Who we are</h3>
-      <h2>Our Professional Team</h2>
+      <h2 id="about">Our Professional Team</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!

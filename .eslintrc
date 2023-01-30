@@ -1,3 +1,4 @@
+// Unable to load schema from 'https://json.schemastore.org/eslintrc': getaddrinfo ENOTFOUND json.schemastore.org.(768)
 {
   "env": {
     "browser": true,
@@ -67,7 +68,6 @@
         "controlComponents": ["input"]
       }
     ],
-
     "object-shorthand": "error",
     "no-shadow": "error",
     "no-console": "warn"

@@ -24,6 +24,7 @@ export const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h2 id="contact">Request Contact</h2>
       <p>
         <label>
           Your Name:{' '}

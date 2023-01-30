@@ -54,3 +54,16 @@ yarn add -D babel-plugin-styled-components
 yarn add react-is
 npx mrm@2 lint-staged
 ```
+
+`2023-01-29 14:56`
+
+```bash
+yarn add -D @rollup/plugin-eslint
+yarn add -D vite-tsconfig-paths
+```
+
+`2023-01-29 20:40`
+
+```bash
+yarn add -D vite-plugin-svgr
+```

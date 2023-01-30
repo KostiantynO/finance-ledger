@@ -1,8 +1,8 @@
-export const BlogPost = () => (
+export const Blog = () => (
   <div>
     <time>April 16 2020</time>
 
-    <h2>Blog Post One</h2>
+    <h2 id="blog">Blog Post One</h2>
 
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum

@@ -1,11 +1,12 @@
+import type { ReactNode } from 'react';
+import { Suspense } from 'react';
 import { Header } from './Header';
-import { Main } from './Main';
 import { Footer } from './Footer';
 
-export const Layout = () => (
+export const Layout = ({ children }: { children: ReactNode }) => (
   <>
     <Header />
-    <Main />
+    <Suspense>{children}</Suspense>
     <Footer />
   </>
 );

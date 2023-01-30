@@ -1,3 +1,9 @@
-const Home = () => <div>Home</div>;
+import { Main } from 'components/Layout/Main';
 
-export default Home;
+const PageHome = () => (
+  <div title="home">
+    <Main />
+  </div>
+);
+
+export default PageHome;
