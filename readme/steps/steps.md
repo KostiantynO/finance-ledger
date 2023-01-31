@@ -67,3 +67,9 @@ yarn add -D vite-tsconfig-paths
 ```bash
 yarn add -D vite-plugin-svgr
 ```
+
+`2023-01-30 22:54`
+
+```bash
+yarn add react-hook-form
+```

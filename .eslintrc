@@ -51,6 +51,10 @@
     "no-restricted-imports": "error",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      { "checksVoidReturn": { "attributes": false } }
+    ],
 
     "react/function-component-definition": [
       "warn",
@@ -59,6 +63,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "react/jsx-props-no-spreading": ["error", { "exceptions": ["input"] }],
 
     "jsx-a11y/label-has-associated-control": [
       "error",

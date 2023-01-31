@@ -8,25 +8,24 @@ export const BookIcon = styled(ReactComponent)`
   height: 32px;
 `;
 
-const transitionTransform = transition('transform');
+const transitionTransform = transition('transform', 'font-size');
 
 export const LogoLink = styled(Link)`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 
   max-width: 297px;
 
   font-size: 35px;
-  line-height: 48px;
+  line-height: 1.37;
   font-family: 'Open Sans';
   color: ${({ theme }) => theme.color.accent};
 
   ${transitionTransform}
 
   &:hover {
-    transform: scale(1.075);
+    font-size: 40px;
   }
 `;
 

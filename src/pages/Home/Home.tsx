@@ -1,9 +1,5 @@
 import { Main } from 'components/Layout/Main';
 
-const PageHome = () => (
-  <div title="home">
-    <Main />
-  </div>
-);
+const PageHome = () => <Main />;
 
 export default PageHome;

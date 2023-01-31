@@ -3,7 +3,7 @@ import { css } from 'styled-components';
 
 // TODO: update
 const gradient =
-  'linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))';
+  'linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))';
 
 interface Images {
   jpg: string;

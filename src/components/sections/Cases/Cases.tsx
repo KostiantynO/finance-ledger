@@ -1,6 +1,6 @@
+import { useState } from 'react';
 import { makeEntity } from 'common/utils';
 import { Container, Picture, Section } from 'components/shared';
-import { useState } from 'react';
 
 import cases1jpg from 'assets/images/cases/cases1.jpg';
 import cases1webp from 'assets/images/cases/cases1.webp';
@@ -31,6 +31,7 @@ import cases6jpg from 'assets/images/cases/cases6.jpg';
 import cases6webp from 'assets/images/cases/cases6.webp';
 import cases6jpg2x from 'assets/images/cases/cases6@2x.jpg';
 import cases6webp2x from 'assets/images/cases/cases6@2x.webp';
+import { CasesListStyled } from './Cases.styled';
 
 interface Case {
   jpg: string;
@@ -84,29 +85,30 @@ const casesArr: Case[] = [
     alt: '',
   },
 ];
+
 const casesEntity = makeEntity(casesArr);
 
 const CasesList = () => {
   const [cases] = useState(casesEntity);
 
   return (
-    <ul>
+    <CasesListStyled>
       {cases.ids.map(id => {
         const { jpg, webp, jpg2x, webp2x, alt } = cases.entities[id];
 
         return (
           <li key={id}>
             <Picture
-              jpg={jpg}
               webp={webp}
-              jpg2x={jpg2x}
               webp2x={webp2x}
+              jpg={jpg}
+              jpg2x={jpg2x}
               alt={alt}
             />
           </li>
         );
       })}
-    </ul>
+    </CasesListStyled>
   );
 };
 

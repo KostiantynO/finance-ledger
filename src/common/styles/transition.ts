@@ -1,7 +1,7 @@
 import type { FlattenSimpleInterpolation } from 'styled-components';
 import { css } from 'styled-components';
 
-type Transition = 'transform' | 'color' | 'bgcolor' | 'opacity';
+type Transition = 'transform' | 'color' | 'bgcolor' | 'opacity' | 'font-size';
 
 export const transition = (
   ...args: Transition[]
