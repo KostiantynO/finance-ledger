@@ -11,18 +11,15 @@ interface Inputs {
   name: string;
 }
 
-const defaultValues = { name: '', email: '', message: '' };
-
 export const Form = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>({ defaultValues });
+  } = useForm<Inputs>({ defaultValues: { name: '', email: '' } });
 
   /* Here’s the juicy bit for posting the form submission */
   const onSubmit: SubmitHandler<Inputs> = data => {
-    console.log(data);
     postContact(data).catch(alert);
   };
 

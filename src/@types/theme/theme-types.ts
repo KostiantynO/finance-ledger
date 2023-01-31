@@ -12,3 +12,7 @@ export interface Color {
   lightGrey: '#F4F4F4';
   heroBg: '#888888';
 }
+
+export interface Font {
+  openSans: 'Open Sans';
+}

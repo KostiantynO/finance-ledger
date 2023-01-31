@@ -1,5 +1,4 @@
-import type { Breakpoint, Color } from '@types';
-import type { DefaultTheme } from 'styled-components';
+import type { Breakpoint, Color, Font } from '@types';
 
 const bp: Breakpoint = {
   mobile: '320px',
@@ -16,7 +15,14 @@ const color: Color = {
   heroBg: '#888888',
 };
 
-export const theme: DefaultTheme = Object.freeze({
+const font: Font = {
+  openSans: 'Open Sans',
+};
+
+export const theme = Object.freeze({
   bp,
   color,
+  font,
 });
+
+export type ThemeType = typeof theme;

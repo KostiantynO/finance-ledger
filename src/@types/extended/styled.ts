@@ -1,14 +1,6 @@
-import type { Breakpoint, Color } from '../theme';
-
-// import original module declarations
+import type { ThemeType } from 'App/theme';
 import 'styled-components';
 
-/**
- * This is an extended styled interface
- */
 declare module 'styled-components' {
-  export interface DefaultTheme {
-    bp: Breakpoint;
-    color: Color;
-  }
+  export interface DefaultTheme extends ThemeType {}
 }

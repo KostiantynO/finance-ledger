@@ -2,7 +2,7 @@ import { Container } from 'components/shared';
 import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;

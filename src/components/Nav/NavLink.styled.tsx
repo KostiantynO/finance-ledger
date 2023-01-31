@@ -6,5 +6,12 @@ export const NavList = styled.ul`
 `;
 
 export const LinkStyled = styled.a`
+  padding: 2px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: ${({ theme }) => theme.font.openSans};
+  color: ${({ theme }) => theme.color.white};
+
   text-transform: capitalize;
 `;

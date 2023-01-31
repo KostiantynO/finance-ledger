@@ -7,9 +7,9 @@ import { AppStyled } from './App.styled';
 
 export const App = () => (
   <ThemeProvider theme={theme}>
-    <AppStyled className="App">
-      <GlobalStyle />
+    <GlobalStyle />
 
+    <AppStyled className="App">
       <Layout>
         <Outlet />
       </Layout>

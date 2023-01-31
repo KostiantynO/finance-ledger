@@ -8,7 +8,7 @@ export const BookIcon = styled(ReactComponent)`
   height: 32px;
 `;
 
-const transitionTransform = transition('transform', 'font-size');
+const transitionTransform = transition('transform');
 
 export const LogoLink = styled(Link)`
   display: flex;
@@ -19,13 +19,13 @@ export const LogoLink = styled(Link)`
 
   font-size: 35px;
   line-height: 1.37;
-  font-family: 'Open Sans';
+  font-family: ${({ theme }) => theme.font.openSans};
   color: ${({ theme }) => theme.color.accent};
 
   ${transitionTransform}
 
   &:hover {
-    font-size: 40px;
+    transform: scale(1.075);
   }
 `;
 
