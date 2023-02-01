@@ -1,5 +1,6 @@
 export interface Breakpoint {
   mobile: '320px';
+  preTablet: '767px';
   tablet: '768px';
   desktop: '1360px';
 }
@@ -11,6 +12,7 @@ export interface Color {
   blue: '#0284D0';
   lightGrey: '#F4F4F4';
   heroBg: '#888888';
+  btnHover: '#2EBF4F';
 }
 
 export interface Font {

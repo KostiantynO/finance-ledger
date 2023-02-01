@@ -25,8 +25,8 @@ export const Form = () => {
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <h2 id="contact">Request Callback</h2>
+    <form id="contact" onSubmit={handleSubmit(onSubmit)}>
+      <h2>Request Callback</h2>
 
       <Field>
         <Label>

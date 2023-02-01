@@ -1,11 +1,22 @@
-import { HeroSection, HeroTitle, HeroDescription } from './Hero.styled';
+import {
+  HeroSection,
+  HeroTitle,
+  HeroDescription,
+  HeroButton,
+  ArrowRight,
+} from './Hero.styled';
 
 export const Hero = () => (
-  <HeroSection>
-    <HeroTitle id="home">The Sky Is The Limit</HeroTitle>
+  <HeroSection id="home">
+    <HeroTitle>The sky is the limit</HeroTitle>
+
     <HeroDescription>
       We provide world class financial assistance
     </HeroDescription>
-    <button type="button">Read More</button>
+
+    <HeroButton type="button">
+      <ArrowRight />
+      Read More
+    </HeroButton>
   </HeroSection>
 );

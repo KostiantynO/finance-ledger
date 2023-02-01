@@ -1,29 +1,84 @@
 import type { EntityId } from '@types';
 import { makeEntity } from 'common/utils';
-import { Section } from 'components/shared';
+import { Picture, Section } from 'components/shared';
 import { createContext, useContext } from 'react';
+
+import person1webp from 'assets/images/team/person1.webp';
+import person1webp2x from 'assets/images/team/person1@2x.webp';
+import person1jpg from 'assets/images/team/person1.jpg';
+import person1jpg2x from 'assets/images/team/person1@2x.jpg';
+
+import person2webp from 'assets/images/team/person2.webp';
+import person2webp2x from 'assets/images/team/person2@2x.webp';
+import person2jpg from 'assets/images/team/person2.jpg';
+import person2jpg2x from 'assets/images/team/person2@2x.jpg';
+
+import person3webp from 'assets/images/team/person3.webp';
+import person3webp2x from 'assets/images/team/person3@2x.webp';
+import person3jpg from 'assets/images/team/person3.jpg';
+import person3jpg2x from 'assets/images/team/person3@2x.jpg';
 
 interface ISpecialist {
   name: string;
   surname: string;
   position: string;
+  photos: { webp: string; webp2x: string; jpg: string; jpg2x: string };
 }
+
 const teamArr: ISpecialist[] = [
-  { name: 'John', surname: 'Doe', position: 'President' },
-  { name: 'Jane', surname: 'Doe', position: 'Vice President' },
-  { name: 'Steve Smith', surname: 'Smith', position: 'Marketing Head' },
+  {
+    name: 'John',
+    surname: 'Doe',
+    position: 'President',
+    photos: {
+      webp: person1webp,
+      webp2x: person1webp2x,
+      jpg: person1jpg,
+      jpg2x: person1jpg2x,
+    },
+  },
+  {
+    name: 'Jane',
+    surname: 'Doe',
+    position: 'Vice President',
+    photos: {
+      webp: person2webp,
+      webp2x: person2webp2x,
+      jpg: person2jpg,
+      jpg2x: person2jpg2x,
+    },
+  },
+  {
+    name: 'Steve Smith',
+    surname: 'Smith',
+    position: 'Marketing Head',
+    photos: {
+      webp: person3webp,
+      webp2x: person3webp2x,
+      jpg: person3jpg,
+      jpg2x: person3jpg2x,
+    },
+  },
 ];
+
 const teamEntity = makeEntity(teamArr);
 const TeamContext = createContext(teamEntity);
 const useTeamContext = () => useContext(TeamContext);
 
 const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
-  const { name, surname, position } = useTeamContext().entities[specialistId];
+  const {
+    name,
+    surname,
+    position,
+    photos: { webp, webp2x, jpg, jpg2x },
+  } = useTeamContext().entities[specialistId];
+
   const fullName = `${name} ${surname}`;
+  const alt = `${fullName} - ${position}`;
 
   return (
     <li>
-      <img src="specialist" alt={fullName} sizes="" srcSet="" />
+      <Picture webp={webp} webp2x={webp2x} jpg={jpg} jpg2x={jpg2x} alt={alt} />
       <p>{fullName}</p>
       <p>{position}</p>
     </li>
@@ -43,10 +98,10 @@ const TeamList = () => {
 };
 
 export const Team = () => (
-  <Section>
+  <Section id="team">
     <div>
       <h3>Who we are</h3>
-      <h2 id="about">Our Professional Team</h2>
+      <h2>Our Professional Team</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!

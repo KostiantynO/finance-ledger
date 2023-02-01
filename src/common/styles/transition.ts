@@ -1,13 +1,11 @@
 import type { FlattenSimpleInterpolation } from 'styled-components';
 import { css } from 'styled-components';
 
-type Transition = 'transform' | 'color' | 'bgcolor' | 'opacity' | 'font-size';
-
 export const transition = (
-  ...args: Transition[]
+  ...args: string[]
 ): FlattenSimpleInterpolation => css`
   @media screen and (prefers-reduced-motion: no-preference) {
-    transition: 210ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms ease-in-out;
     transition-property: ${args.length > 1 ? args.join(', ') : args};
   }
 `;

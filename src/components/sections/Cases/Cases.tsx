@@ -113,10 +113,10 @@ const CasesList = () => {
 };
 
 export const Cases = () => (
-  <Section>
+  <Section id="cases">
     <Container>
       <h3>This is what we do</h3>
-      <h2 id="cases">Business Cases</h2>
+      <h2>Business Cases</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!

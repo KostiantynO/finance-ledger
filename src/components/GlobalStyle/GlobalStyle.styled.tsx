@@ -49,6 +49,12 @@ export const GlobalStyle = styled.createGlobalStyle`
     cursor: pointer;
   }
 
+  html {
+    @media screen and (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
+
   body {
     font-family: ${({ theme }) => theme.font.openSans};
     color: ${({ theme }) => theme.color.main};
