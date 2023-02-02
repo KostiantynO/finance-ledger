@@ -27,6 +27,9 @@ export const HeroSection = styled.section`
   ${bgGradient({ jpg, webp })}
   ${retinaGradient({ jpg2x, webp2x })}
 
+  content-visibility: auto;
+  contain-intrinsic-size: 533px;
+
   .thumb {
     display: flex;
     justify-content: center;

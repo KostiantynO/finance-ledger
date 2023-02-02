@@ -4,7 +4,7 @@ import { LogoLink, Accent, Normal, BookIcon, Row } from './Logo.styled';
 const { root } = routes;
 
 export const Logo = () => (
-  <LogoLink to={root}>
+  <LogoLink href={root}>
     <Row>
       <BookIcon />
       <Accent>Finance</Accent>

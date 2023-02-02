@@ -1,8 +1,8 @@
-import { Container } from 'components/shared';
+// import { Container } from 'components/shared';
 
 export const Footer = () => (
   <footer>
-    <Container>
+    {/* <Container>
       <ul>
         <li>facebook</li>
         <li>twitter</li>
@@ -11,6 +11,6 @@ export const Footer = () => (
       </ul>
 
       <p>Copyright © {new Date().getFullYear()} - FinanceLedger</p>
-    </Container>
+    </Container> */}
   </footer>
 );

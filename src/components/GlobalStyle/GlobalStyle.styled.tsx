@@ -50,6 +50,8 @@ export const GlobalStyle = styled.createGlobalStyle`
   }
 
   html {
+    scrollbar-gutter: stable both-edges;
+
     @media screen and (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;
     }

@@ -11,7 +11,7 @@ export interface Color {
   white: '#FFFFFF';
   blue: '#0284D0';
   lightGrey: '#F4F4F4';
-  heroBg: '#888888';
+  heroBg: '#212121';
   btnHover: '#2EBF4F';
 }
 

@@ -1,6 +1,6 @@
 import peopleJpg from 'assets/images/home/people.jpg';
 import peopleJpg2x from 'assets/images/home/people@2x.jpg';
-import { Container, FullWidth, Section } from 'components/shared';
+import { Container, FullWidth } from 'components/shared';
 
 const PeoplePhoto = () => (
   <FullWidth>
@@ -31,11 +31,11 @@ const SolutionsContent = () => (
 );
 
 export const Solutions = () => (
-  <Section>
+  <section id="about">
     <PeoplePhoto />
 
     <Container>
       <SolutionsContent />
     </Container>
-  </Section>
+  </section>
 );

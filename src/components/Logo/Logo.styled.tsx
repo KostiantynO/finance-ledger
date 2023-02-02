@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { transition } from 'common/styles';
 import { ReactComponent } from 'assets/svg/book.svg';
-import { Link } from 'react-router-dom';
 
 export const BookIcon = styled(ReactComponent)`
   width: 40px;
@@ -10,7 +9,7 @@ export const BookIcon = styled(ReactComponent)`
 
 const logoTransition = transition('letter-spacing');
 
-export const LogoLink = styled(Link)`
+export const LogoLink = styled.a`
   display: flex;
   align-items: center;
   gap: 8px;
