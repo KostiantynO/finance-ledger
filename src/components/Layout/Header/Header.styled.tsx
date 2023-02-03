@@ -8,24 +8,32 @@ export const HeaderStyled = styled.header`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   z-index: 1;
 
-  padding: 22px 0 16px;
+  width: 100%;
+  padding: 22px 0;
+
+  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+    padding: 16px 0;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
+    padding: 32px 0;
+  }
 
   ${fading}
 
   &.header-bg-visible {
-    background-color: rgba(21, 21, 21, 0.92);
-  }
-
-  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
-    padding-top: 16px;
+    background-color: rgba(21, 21, 21, 0.95);
   }
 `;
 
 export const HeaderContainer = styled(Container)`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
 `;

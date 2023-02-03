@@ -1,41 +1,94 @@
-import peopleJpg from 'assets/images/home/people.jpg';
-import peopleJpg2x from 'assets/images/home/people@2x.jpg';
-import { Container, FullWidth } from 'components/shared';
+import peopleWebpM from 'assets/images/home/mobile/solutions-people.webp';
+import peopleWebpM2x from 'assets/images/home/mobile/solutions-people@2x.webp';
+import peopleJpgM from 'assets/images/home/mobile/solutions-people.jpg';
+import peopleJpgM2px from 'assets/images/home/mobile/solutions-people@2x.jpg';
+
+// TODO: squuosh
+import peopleWebpT from 'assets/images/home/people.webp';
+import peopleWebpT2x from 'assets/images/home/people@2x.webp';
+import peopleJpgT from 'assets/images/home/people.jpg';
+import peopleJpgT2x from 'assets/images/home/people@2x.jpg';
+
+import { ButtonOutlinedAccent } from 'components/Button';
+import {
+  SolutionsSection,
+  SolutionsContentStyled,
+  SolutionsContainer,
+} from './Solutions.styled';
 
 const PeoplePhoto = () => (
-  <FullWidth>
-    <img
-      src={peopleJpg}
-      alt="professional team"
-      sizes="100%"
-      srcSet={`${peopleJpg}, ${peopleJpg2x} 2x`}
+  <picture>
+    {/* Desktop */}
+    <source
+      media="(min-width: 1360px)"
+      sizes="(min-width: 1360px) 670px, 50vw"
+      srcSet={`${peopleWebpT} 1x, ${peopleWebpT2x} 2x`}
+      type="image/webp"
     />
-  </FullWidth>
+
+    <source
+      media="(min-width: 1360px)"
+      sizes="(min-width: 1360px) 670px, 50vw"
+      srcSet={`${peopleJpgT} 1x, ${peopleJpgT2x} 2x`}
+      type="image/jpg"
+    />
+
+    {/* Tablet */}
+    <source
+      media="(min-width: 768px)"
+      sizes="(min-width: 768px) 364px, 50vw"
+      srcSet={`${peopleWebpT} 1x, ${peopleWebpT2x} 2x`}
+      type="image/webp"
+    />
+
+    <source
+      media="(min-width: 768px)"
+      sizes="(min-width: 768px) 364px, 50vw"
+      srcSet={`${peopleJpgT} 1x, ${peopleJpgT2x} 2x`}
+      type="image/jpg"
+    />
+
+    {/* Mobile */}
+    <source
+      media="(max-width: 767px)"
+      sizes="100vw"
+      srcSet={`${peopleWebpM} 1x, ${peopleWebpM2x} 2x`}
+      type="image/webp"
+    />
+
+    <source
+      media="(max-width: 767px)"
+      sizes="100vw"
+      srcSet={`${peopleJpgM} 1x, ${peopleJpgM2px} 2x`}
+      type="image/jpg"
+    />
+
+    <img src={peopleJpgM} alt="professional team" />
+  </picture>
 );
 
 const SolutionsContent = () => (
-  <div>
-    <h3>What you are looking for</h3>
+  <SolutionsContentStyled>
+    <p className="smallText">What you are looking for</p>
 
-    <h2>We provide bespoke solutions</h2>
+    <h2 className="title">We provide bespoke solutions</h2>
 
-    <p>
+    <p className="description">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
       dignissimos quae laudantium asperiores nam aliquid impedit harum illum
       dolore explicabo ab dolores itaque rerum temporibus doloribus iste maiores
       deleniti?
     </p>
 
-    <button type="button">Read More</button>
-  </div>
+    <ButtonOutlinedAccent>Read More</ButtonOutlinedAccent>
+  </SolutionsContentStyled>
 );
 
 export const Solutions = () => (
-  <section id="about">
-    <PeoplePhoto />
-
-    <Container>
+  <SolutionsSection id="about">
+    <SolutionsContainer padding="0">
+      <PeoplePhoto />
       <SolutionsContent />
-    </Container>
-  </section>
+    </SolutionsContainer>
+  </SolutionsSection>
 );

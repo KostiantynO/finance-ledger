@@ -50,7 +50,16 @@ export const GlobalStyle = styled.createGlobalStyle`
   }
 
   html {
-    scrollbar-gutter: stable both-edges;
+    scrollbar-gutter: stable;
+    scroll-padding-top: 120px; // header height
+
+    @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+      scroll-padding-top: 80px;
+    }
+
+    @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
+      scroll-padding-top: 112px;
+    }
 
     @media screen and (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;

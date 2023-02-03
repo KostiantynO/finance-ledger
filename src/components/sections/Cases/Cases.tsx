@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { makeEntity } from 'common/utils';
-import { Container, Picture, Section } from 'components/shared';
+import { Container, Picture } from 'components/shared';
 
 import cases1jpg from 'assets/images/cases/cases1.jpg';
 import cases1webp from 'assets/images/cases/cases1.webp';
@@ -31,7 +31,7 @@ import cases6jpg from 'assets/images/cases/cases6.jpg';
 import cases6webp from 'assets/images/cases/cases6.webp';
 import cases6jpg2x from 'assets/images/cases/cases6@2x.jpg';
 import cases6webp2x from 'assets/images/cases/cases6@2x.webp';
-import { CasesListStyled } from './Cases.styled';
+import { CasesListStyled, CasesSection } from './Cases.styled';
 
 interface Case {
   jpg: string;
@@ -99,10 +99,10 @@ const CasesList = () => {
         return (
           <li key={id}>
             <Picture
-              webp={webp}
-              webp2x={webp2x}
               jpg={jpg}
+              webp={webp}
               jpg2x={jpg2x}
+              webp2x={webp2x}
               alt={alt}
             />
           </li>
@@ -113,16 +113,16 @@ const CasesList = () => {
 };
 
 export const Cases = () => (
-  <Section id="cases">
+  <CasesSection id="cases">
     <Container>
-      <h3>This is what we do</h3>
-      <h2>Business Cases</h2>
-      <p>
+      <p className="smallText">This is what we do</p>
+      <h2 className="title">Business Cases</h2>
+      <p className="desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </p>
 
       <CasesList />
     </Container>
-  </Section>
+  </CasesSection>
 );

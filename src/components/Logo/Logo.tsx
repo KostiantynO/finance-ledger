@@ -1,5 +1,5 @@
 import { routes } from 'common';
-import { LogoLink, Accent, Normal, BookIcon, Row } from './Logo.styled';
+import { LogoLink, BookIcon, Row } from './Logo.styled';
 
 const { root } = routes;
 
@@ -7,9 +7,9 @@ export const Logo = () => (
   <LogoLink href={root}>
     <Row>
       <BookIcon />
-      <Accent>Finance</Accent>
+      <span className="accent">Finance</span>
     </Row>
 
-    <Normal>Ledger</Normal>
+    <span className="normal">Ledger</span>
   </LogoLink>
 );

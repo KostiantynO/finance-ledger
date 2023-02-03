@@ -7,7 +7,7 @@ export const BookIcon = styled(ReactComponent)`
   height: 32px;
 `;
 
-const logoTransition = transition('letter-spacing');
+const logoTransition = transition('transform');
 
 export const LogoLink = styled.a`
   display: flex;
@@ -25,7 +25,29 @@ export const LogoLink = styled.a`
   ${logoTransition}
 
   &:hover {
-    letter-spacing: 0.02em;
+    transform: scale3d(1.075, 1.075, 1);
+  }
+
+  & .accent,
+  & .normal {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  & .accent {
+    color: ${({ theme }) => theme.color.accent};
+  }
+
+  & .normal {
+    color: ${({ theme }) => theme.color.white};
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+    & .accent,
+    & .normal {
+      font-size: 35px;
+      line-height: 48px;
+    }
   }
 `;
 
@@ -33,16 +55,4 @@ export const Row = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-`;
-
-export const Accent = styled.span`
-  font-size: 28px;
-  line-height: 1.36;
-  color: ${({ theme }) => theme.color.accent};
-`;
-
-export const Normal = styled.span`
-  font-size: 28px;
-  line-height: 1.36;
-  color: ${({ theme }) => theme.color.white};
 `;

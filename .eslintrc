@@ -58,9 +58,7 @@
 
     "@typescript-eslint/no-empty-interface": [
       "error",
-      {
-        "allowSingleExtends": true
-      }
+      { "allowSingleExtends": true }
     ],
 
     "react/function-component-definition": [
@@ -71,6 +69,10 @@
       }
     ],
     "react/jsx-props-no-spreading": ["error", { "exceptions": ["input"] }],
+    "react/require-default-props": [
+      "warn",
+      { "forbidDefaultForRequired": true, "functions": "ignore" }
+    ],
 
     "jsx-a11y/label-has-associated-control": [
       "error",

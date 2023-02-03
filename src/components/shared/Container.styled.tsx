@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 
-export const FullWidth = styled.div`
-  width: ${({ theme }) => theme.bp.mobile};
+export const Container = styled.div.attrs(({ padding }: { padding?: string }) =>
+  padding ? { padding } : {}
+)`
+  max-width: ${({ theme }) => theme.bp.mobile};
+  margin: 0 auto;
+  padding: ${({ padding }) => padding ?? '0 20px'};
 
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
-    width: ${({ theme }) => theme.bp.tablet};
+    max-width: ${({ theme }) => theme.bp.tablet};
   }
 
   @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
-    width: ${({ theme }) => theme.bp.desktop};
+    max-width: ${({ theme }) => theme.bp.desktop};
   }
-`;
-
-export const Container = styled(FullWidth)`
-  padding: 0 20px;
-  margin: 0 auto;
 `;

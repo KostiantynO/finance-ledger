@@ -4,6 +4,7 @@ const bp: Breakpoint = {
   mobile: '320px',
   preTablet: '767px',
   tablet: '768px',
+  preDesktop: '1359px',
   desktop: '1360px',
 };
 
@@ -14,7 +15,10 @@ const color: Color = {
   blue: '#0284D0',
   lightGrey: '#F4F4F4',
   heroBg: '#212121',
-  btnHover: '#2EBF4F',
+  btnHoverMain: '#2EBF4F',
+  btnHoverSecond: '#F4F4F4',
+  btnHoverMainVideo: '#219037',
+  btnHoverThird: '#0284D0',
 };
 
 const font: Font = {

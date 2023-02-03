@@ -49,7 +49,7 @@ export const ObservedPixel = () => {
       }
       observer.disconnect();
     };
-  }, [pixel.current]);
+  }, []);
 
   return <div ref={pixel} />;
 };
