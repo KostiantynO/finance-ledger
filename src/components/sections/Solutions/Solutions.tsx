@@ -14,10 +14,11 @@ import {
   SolutionsSection,
   SolutionsContentStyled,
   SolutionsContainer,
+  StyledPhoto,
 } from './Solutions.styled';
 
 const PeoplePhoto = () => (
-  <picture>
+  <StyledPhoto>
     {/* Desktop */}
     <source
       media="(min-width: 1360px)"
@@ -64,7 +65,7 @@ const PeoplePhoto = () => (
     />
 
     <img src={peopleJpgM} alt="professional team" />
-  </picture>
+  </StyledPhoto>
 );
 
 const SolutionsContent = () => (

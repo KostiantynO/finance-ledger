@@ -1,12 +1,21 @@
 import type { Breakpoint, Color, Font } from '@types';
 
-const bp: Breakpoint = {
+export const bp: Breakpoint = {
   mobile: '320px',
   preTablet: '767px',
   tablet: '768px',
   preDesktop: '1359px',
   desktop: '1360px',
 };
+
+const { mobile, tablet, desktop } = bp;
+
+const tabletAndDesktop =
+  `(min-width: ${desktop}) 421px, 100vw, (min-width: ${tablet}) 223px` as const;
+
+export const sizesCard = `${tabletAndDesktop}, 280px` as const;
+
+export const sizesCadFullScreen = `${tabletAndDesktop}, ${mobile}` as const;
 
 const color: Color = {
   accent: '#28A745',

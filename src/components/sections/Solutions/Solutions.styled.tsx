@@ -7,10 +7,12 @@ export const SolutionsContainer = styled(Container)`
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     display: grid;
     grid-template-columns: 368px 1fr;
+    grid-template-rows: 589px;
   }
 
   @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
     grid-template-columns: 670px 1fr;
+    grid-template-rows: 460px;
   }
 `;
 
@@ -65,5 +67,14 @@ export const SolutionsContentStyled = styled.div`
       font-size: 18px;
       line-height: 25px;
     }
+  }
+`;
+
+export const StyledPhoto = styled.picture`
+  display: flex;
+  background-color: #eee;
+
+  img {
+    object-fit: cover;
   }
 `;
