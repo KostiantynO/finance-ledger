@@ -3,7 +3,6 @@ import {
   Solutions,
   Cases,
   Blog,
-  Gallery,
   Team,
   Callback,
 } from 'components/sections';
@@ -16,7 +15,6 @@ export const Main = () => (
     <Solutions />
     <Cases />
     <Blog />
-    <Gallery />
     <Team />
     <Callback />
   </MainStyled>
