@@ -17,6 +17,7 @@ import person3webp from 'assets/images/team/person3.webp';
 import person3webp2x from 'assets/images/team/person3@2x.webp';
 import person3jpg from 'assets/images/team/person3.jpg';
 import person3jpg2x from 'assets/images/team/person3@2x.jpg';
+import { sizesCard } from 'App/theme';
 import { TeamSection } from './Team.styled';
 
 interface ISpecialist {
@@ -79,7 +80,16 @@ const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
 
   return (
     <li>
-      <Picture webp={webp} webp2x={webp2x} jpg={jpg} jpg2x={jpg2x} alt={alt} />
+      <Picture
+        webp={webp}
+        webp2={webp2x}
+        jpg={jpg}
+        jpg2={jpg2x}
+        alt={alt}
+        sizes={sizesCard}
+        w="640w"
+        w2="1280w"
+      />
 
       <p>{fullName}</p>
       <p>{position}</p>

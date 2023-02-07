@@ -52,7 +52,7 @@
     "styled-components": "^5"
   },
   "lint-staged": {
-    "src/**/*.ts{,x}": "eslint --cache --fix",
+    "src/**/*.{ts,tsx}": "eslint --cache --fix",
     "src/**/*.{ts,tsx,md}": "prettier --check --write --cache"
   }
 }

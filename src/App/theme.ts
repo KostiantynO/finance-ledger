@@ -14,7 +14,6 @@ const tabletAndDesktop =
   `(min-width: ${desktop}) 421px, 100vw, (min-width: ${tablet}) 223px` as const;
 
 export const sizesCard = `${tabletAndDesktop}, 280px` as const;
-
 export const sizesCadFullScreen = `${tabletAndDesktop}, ${mobile}` as const;
 
 const color: Color = {
