@@ -12,6 +12,5 @@ export const LinkStyled = styled.a`
   line-height: 22px;
   font-family: ${({ theme }) => theme.font.openSans};
   color: ${({ theme }) => theme.color.white};
-
   text-transform: capitalize;
 `;

@@ -29,11 +29,13 @@ export const HeaderStyled = styled.header`
 `;
 
 export const HeaderContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
   }
 `;

@@ -3,8 +3,17 @@ import { transition } from 'common/styles';
 import { ReactComponent } from 'assets/svg/book.svg';
 
 export const BookIcon = styled(ReactComponent)`
-  width: 40px;
-  height: 32px;
+  width: 39px;
+  height: 31px;
+
+  @media screen and (max-width: ${({ theme }) => theme.bp.preTablet}) {
+    margin-top: 3px;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+    width: 40px;
+    height: 35px;
+  }
 `;
 
 const logoTransition = transition('transform');
@@ -17,8 +26,8 @@ export const LogoLink = styled.a`
   max-width: 297px;
   padding-left: 4px;
 
-  font-size: 35px;
-  line-height: 1.37;
+  font-size: 28px;
+  line-height: 38px;
   font-family: ${({ theme }) => theme.font.openSans};
   color: ${({ theme }) => theme.color.accent};
 
@@ -28,31 +37,12 @@ export const LogoLink = styled.a`
     transform: scale3d(1.075, 1.075, 1);
   }
 
-  & .accent,
-  & .normal {
-    font-size: 28px;
-    line-height: 38px;
-  }
-
-  & .accent {
-    color: ${({ theme }) => theme.color.accent};
-  }
-
-  & .normal {
-    color: ${({ theme }) => theme.color.white};
-  }
-
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
-    & .accent,
-    & .normal {
-      font-size: 35px;
-      line-height: 48px;
-    }
+    font-size: 35px;
+    line-height: 48px;
   }
 `;
 
-export const Row = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
+export const White = styled.span`
+  color: ${({ theme }) => theme.color.white};
 `;

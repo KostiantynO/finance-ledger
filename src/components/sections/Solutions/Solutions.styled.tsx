@@ -10,7 +10,6 @@ export const SolutionsContainer = styled(Container)`
   }
 
   @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
-    display: grid;
     grid-template-columns: 670px 1fr;
   }
 `;
@@ -18,13 +17,19 @@ export const SolutionsContainer = styled(Container)`
 export const SolutionsContentStyled = styled.div`
   padding: 79px 20px;
 
+  min-height: 562px;
+
   color: ${({ theme }) => theme.color.white};
 
   background: ${({ theme }) => theme.color.accent};
 
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
-    min-width: 400px;
     min-height: 589px;
+    padding: 62px 32px;
+  }
+
+  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+    min-height: 460px;
     padding: 62px 32px;
   }
 
