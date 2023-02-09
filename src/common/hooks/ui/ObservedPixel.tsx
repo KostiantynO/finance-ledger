@@ -9,7 +9,7 @@
 //   }
 // });
 
-import { useRef, useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const appear = () => {
   document.querySelector('header')?.classList.add('header-bg-visible');

@@ -1,39 +1,32 @@
+import { useState } from 'react';
+import { sizesCard } from 'App/theme';
+import { makeEntity } from 'common/utils';
+import { Picture } from 'components/shared';
+import { CasesListStyled } from './Cases.styled';
 import cases1jpg from 'assets/images/cases/cases1.jpg';
 import cases1webp from 'assets/images/cases/cases1.webp';
 import cases1jpg2x from 'assets/images/cases/cases1@2x.jpg';
 import cases1webp2x from 'assets/images/cases/cases1@2x.webp';
-
-import cases2jpg from 'assets/images/cases/cases3.jpg';
-import cases2webp from 'assets/images/cases/cases3.webp';
-import cases2jpg2x from 'assets/images/cases/cases3@2x.jpg';
-import cases2webp2x from 'assets/images/cases/cases3@2x.webp';
-
-import cases3jpg from 'assets/images/cases/cases5.jpg';
-import cases3webp from 'assets/images/cases/cases5.webp';
-import cases3jpg2x from 'assets/images/cases/cases5@2x.jpg';
-import cases3webp2x from 'assets/images/cases/cases5@2x.webp';
-
-import cases4jpg from 'assets/images/cases/cases7.jpg';
-import cases4webp from 'assets/images/cases/cases7.webp';
-import cases4jpg2x from 'assets/images/cases/cases7@2x.jpg';
-import cases4webp2x from 'assets/images/cases/cases7@2x.webp';
-
 import cases5jpg from 'assets/images/cases/cases2.jpg';
 import cases5webp from 'assets/images/cases/cases2.webp';
 import cases5jpg2x from 'assets/images/cases/cases2@2x.jpg';
 import cases5webp2x from 'assets/images/cases/cases2@2x.webp';
-
+import cases2jpg from 'assets/images/cases/cases3.jpg';
+import cases2webp from 'assets/images/cases/cases3.webp';
+import cases2jpg2x from 'assets/images/cases/cases3@2x.jpg';
+import cases2webp2x from 'assets/images/cases/cases3@2x.webp';
 import cases6jpg from 'assets/images/cases/cases4.jpg';
 import cases6webp from 'assets/images/cases/cases4.webp';
 import cases6jpg2x from 'assets/images/cases/cases4@2x.jpg';
 import cases6webp2x from 'assets/images/cases/cases4@2x.webp';
-
-import { useState } from 'react';
-import { makeEntity } from 'common/utils';
-import { Picture } from 'components/shared';
-
-import { sizesCard } from 'App/theme';
-import { CasesListStyled } from './Cases.styled';
+import cases3jpg from 'assets/images/cases/cases5.jpg';
+import cases3webp from 'assets/images/cases/cases5.webp';
+import cases3jpg2x from 'assets/images/cases/cases5@2x.jpg';
+import cases3webp2x from 'assets/images/cases/cases5@2x.webp';
+import cases4jpg from 'assets/images/cases/cases7.jpg';
+import cases4webp from 'assets/images/cases/cases7.webp';
+import cases4jpg2x from 'assets/images/cases/cases7@2x.jpg';
+import cases4webp2x from 'assets/images/cases/cases7@2x.webp';
 
 interface Case {
   jpg: string;

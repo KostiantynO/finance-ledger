@@ -1,10 +1,10 @@
 import { HeroButton } from 'components/Button';
 import { Container } from 'components/shared';
 import {
+  ArrowRight,
+  HeroDescription,
   HeroSection,
   HeroTitle,
-  HeroDescription,
-  ArrowRight,
 } from './Hero.styled';
 
 export const Hero = () => (

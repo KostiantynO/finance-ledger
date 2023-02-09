@@ -1,5 +1,5 @@
 import { routes } from 'common';
-import { LogoLink, BookIcon, White } from './Logo.styled';
+import { BookIcon, LogoLink, White } from './Logo.styled';
 
 const { root } = routes;
 

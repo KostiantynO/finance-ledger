@@ -1,5 +1,5 @@
-import { Container } from 'components/shared';
 import styled from 'styled-components';
+import { Container } from 'components/shared';
 
 export const SolutionsSection = styled.section``;
 

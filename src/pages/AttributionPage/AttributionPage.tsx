@@ -1,7 +1,7 @@
-import react from 'assets/svg/react.svg';
 import { Container, Section } from 'components/shared';
+import react from 'assets/svg/react.svg';
 
-const PageAttribution = () => (
+const AttributionPage = () => (
   <Section>
     <Container>
       <h1>Made with:</h1>
@@ -21,4 +21,4 @@ const PageAttribution = () => (
   </Section>
 );
 
-export default PageAttribution;
+export default AttributionPage;

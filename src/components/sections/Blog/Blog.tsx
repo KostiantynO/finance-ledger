@@ -1,5 +1,9 @@
+import { Link } from 'react-router-dom';
+import { routes } from 'common';
 import { Container, Section } from 'components/shared';
 import { BlogPhoto } from './BlogPhoto';
+
+const { blog } = routes;
 
 export const Blog = () => (
   <Section id="blog">
@@ -16,7 +20,7 @@ export const Blog = () => (
           iste maiores deleniti?
         </p>
 
-        <button type="button">Read Our Blog</button>
+        <Link to={blog}>Read Our Blog</Link>
       </div>
 
       <BlogPhoto />

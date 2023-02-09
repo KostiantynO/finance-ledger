@@ -1,21 +1,20 @@
-import peopleWebpM from 'assets/images/home/mobile/solutions-people.webp';
-import peopleWebpM2x from 'assets/images/home/mobile/solutions-people@2x.webp';
-import peopleJpgM from 'assets/images/home/mobile/solutions-people.jpg';
-import peopleJpgM2px from 'assets/images/home/mobile/solutions-people@2x.jpg';
-
-// TODO: squuosh
-import peopleWebpT from 'assets/images/home/people.webp';
-import peopleWebpT2x from 'assets/images/home/people@2x.webp';
-import peopleJpgT from 'assets/images/home/people.jpg';
-import peopleJpgT2x from 'assets/images/home/people@2x.jpg';
-
 import { ButtonOutlinedAccent } from 'components/Button';
 import {
-  SolutionsSection,
-  SolutionsContentStyled,
   SolutionsContainer,
+  SolutionsContentStyled,
+  SolutionsSection,
   StyledPhoto,
 } from './Solutions.styled';
+import peopleJpgM from 'assets/images/home/mobile/solutions-people.jpg';
+import peopleWebpM from 'assets/images/home/mobile/solutions-people.webp';
+import peopleJpgM2px from 'assets/images/home/mobile/solutions-people@2x.jpg';
+import peopleWebpM2x from 'assets/images/home/mobile/solutions-people@2x.webp';
+
+// TODO: squuosh
+import peopleJpgT from 'assets/images/home/people.jpg';
+import peopleWebpT from 'assets/images/home/people.webp';
+import peopleJpgT2x from 'assets/images/home/people@2x.jpg';
+import peopleWebpT2x from 'assets/images/home/people@2x.webp';
 
 const PeoplePhoto = () => (
   <StyledPhoto>

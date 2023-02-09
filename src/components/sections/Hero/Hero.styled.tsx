@@ -1,15 +1,12 @@
 import styled from 'styled-components';
-
 import { bg, bgGradient, retina, retinaGradient } from 'common/styles';
 
 import jpgM from 'assets/images/home/mobile/hero.jpg';
 import webpM from 'assets/images/home/mobile/hero.webp';
 import jpgM2x from 'assets/images/home/mobile/hero@2x.jpg';
 import webpM2x from 'assets/images/home/mobile/hero@2x.webp';
-
 import jpgT from 'assets/images/home/showcase.jpg';
 import webpT from 'assets/images/home/showcase.webp';
-
 import jpgT2x from 'assets/images/home/showcase@2x.jpg';
 import webpT2x from 'assets/images/home/showcase@2x.webp';
 import { ReactComponent as Right } from 'assets/svg/right.svg';

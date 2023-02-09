@@ -1,6 +1,6 @@
-import { linksEntity } from 'common';
 import { useState } from 'react';
-import { NavList, LinkStyled } from './Nav.styled';
+import { linksEntity } from 'common';
+import { LinkStyled, NavList } from './Nav.styled';
 
 export const Nav = () => {
   const [links] = useState(linksEntity);

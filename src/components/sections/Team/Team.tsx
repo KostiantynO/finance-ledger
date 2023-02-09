@@ -1,24 +1,22 @@
 import type { EntityId } from '@types';
+import { createContext, useContext } from 'react';
+import { sizesCard } from 'App/theme';
 import { makeEntity } from 'common/utils';
 import { Container, Picture } from 'components/shared';
-import { createContext, useContext } from 'react';
-
-import person1webp from 'assets/images/team/person1.webp';
-import person1webp2x from 'assets/images/team/person1@2x.webp';
-import person1jpg from 'assets/images/team/person1.jpg';
-import person1jpg2x from 'assets/images/team/person1@2x.jpg';
-
-import person2webp from 'assets/images/team/person2.webp';
-import person2webp2x from 'assets/images/team/person2@2x.webp';
-import person2jpg from 'assets/images/team/person2.jpg';
-import person2jpg2x from 'assets/images/team/person2@2x.jpg';
-
-import person3webp from 'assets/images/team/person3.webp';
-import person3webp2x from 'assets/images/team/person3@2x.webp';
-import person3jpg from 'assets/images/team/person3.jpg';
-import person3jpg2x from 'assets/images/team/person3@2x.jpg';
-import { sizesCard } from 'App/theme';
 import { TeamSection } from './Team.styled';
+
+import person1jpg from 'assets/images/team/person1.jpg';
+import person1webp from 'assets/images/team/person1.webp';
+import person1jpg2x from 'assets/images/team/person1@2x.jpg';
+import person1webp2x from 'assets/images/team/person1@2x.webp';
+import person2jpg from 'assets/images/team/person2.jpg';
+import person2webp from 'assets/images/team/person2.webp';
+import person2jpg2x from 'assets/images/team/person2@2x.jpg';
+import person2webp2x from 'assets/images/team/person2@2x.webp';
+import person3jpg from 'assets/images/team/person3.jpg';
+import person3webp from 'assets/images/team/person3.webp';
+import person3jpg2x from 'assets/images/team/person3@2x.jpg';
+import person3webp2x from 'assets/images/team/person3@2x.webp';
 
 interface ISpecialist {
   name: string;

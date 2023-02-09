@@ -1,5 +1,6 @@
-// Unable to load schema from 'https://json.schemastore.org/eslintrc': getaddrinfo ENOTFOUND json.schemastore.org.(768)
 {
+  "root": true,
+
   "env": {
     "browser": true,
     "es2021": true,
@@ -12,6 +13,7 @@
 
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:@typescript-eslint/strict",
@@ -35,8 +37,7 @@
     "tsconfigRootDir": ".",
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["react", "@typescript-eslint"],
-
+  "plugins": [],
   "settings": {
     "import/resolver": {
       "typescript": { "project": "./tsconfig.json" }
@@ -47,6 +48,41 @@
   "rules": {
     "linebreak-style": ["error", "unix"],
     "import/prefer-default-export": 0,
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "warnOnUnassignedImports": true,
+        "pathGroups": [
+          {
+            "pattern": "assets/**",
+            "group": "unknown",
+            "position": "after"
+          }
+        ],
+        "groups": [
+          "type",
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "unknown"
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
 
     "no-restricted-imports": "error",
     "@typescript-eslint/no-explicit-any": "warn",

@@ -1,6 +1,6 @@
+import styled from 'styled-components';
 import { transition } from 'common/styles';
 import { Container } from 'components/shared';
-import styled from 'styled-components';
 
 const fading = transition('background-color');
 

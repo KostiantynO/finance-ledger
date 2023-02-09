@@ -1,14 +1,8 @@
-import webpT from 'assets/images/blog/blog-700w.webp';
+import { StyledPhoto } from '../Solutions';
+import jpgT2 from 'assets/images/blog/blog-1400w.jpg';
 import webpT2 from 'assets/images/blog/blog-1400w.webp';
 import jpgT from 'assets/images/blog/blog-700w.jpg';
-import jpgT2 from 'assets/images/blog/blog-1400w.jpg';
-import { StyledPhoto } from '../Solutions';
-
-// import { theme } from 'App/theme';
-// const media = {
-//   tablet: `(min-width: ${theme.bp.tablet})`,
-//   mobile: `(max-width: ${theme.bp.preTablet})`,
-// };
+import webpT from 'assets/images/blog/blog-700w.webp';
 
 export const BlogPhoto = () => (
   <StyledPhoto>

@@ -1,10 +1,10 @@
 import {
+  Blog,
+  Callback,
+  Cases,
   Hero,
   Solutions,
-  Cases,
-  Blog,
   Team,
-  Callback,
 } from 'components/sections';
 
 import { MainStyled } from './Main.styled';

@@ -1,6 +1,6 @@
-import { postContact } from 'features/contacts';
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
+import { postContact } from 'features/contacts';
 import { Field } from './Field';
 import { ErrorMessage, Label } from './Label';
 

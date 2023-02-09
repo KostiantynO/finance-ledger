@@ -73,3 +73,10 @@ yarn add -D vite-plugin-svgr
 ```bash
 yarn add react-hook-form
 ```
+
+`2023-02-09 13:33`
+
+```bash
+yarn add -D eslint-plugin-simple-import-sort
+yarn remove eslint-plugin-simple-import-sort
+```

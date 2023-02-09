@@ -1,7 +1,7 @@
 import 'modern-normalize/modern-normalize.css';
+import { createGlobalStyle } from 'styled-components';
 import openSans400 from 'assets/fonts/open-sans-l-c-400.woff2';
 import openSans600 from 'assets/fonts/open-sans-l-c-600.woff2';
-import { createGlobalStyle } from 'styled-components';
 
 const styled = { createGlobalStyle };
 
