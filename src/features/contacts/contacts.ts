@@ -1,4 +1,4 @@
-import type { ContactFormPost } from '@types';
+import type { ContactFormPost } from 'types';
 import { encode } from 'common/utils';
 
 export const postContact = async ({

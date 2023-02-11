@@ -1,14 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-condition */
 
-// $(window).scroll(function() {
-//   if ($(this).scrollTop() > 400) {
-//       $( ".header #background" ).fadeIn();
-//   } else {
-//       console.log('there');
-//       $( ".header #background" ).fadeOut();
-//   }
-// });
-
 import { useEffect, useRef } from 'react';
 
 const appear = () => {

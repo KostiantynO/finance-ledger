@@ -1,4 +1,4 @@
-import type { Breakpoint, Color, Font } from '@types';
+import type { Breakpoint, Color, Font } from 'types';
 
 export const bp: Breakpoint = {
   mobile: '320px',
