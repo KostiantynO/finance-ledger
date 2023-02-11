@@ -7,3 +7,16 @@ export const TeamListStyled = styled.ul`
     gap: 12px;
   }
 `;
+
+export const TeamItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .fullName {
+    font-weight: 600;
+  }
+
+  .position {
+  }
+`;

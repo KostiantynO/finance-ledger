@@ -12,7 +12,9 @@ const SolutionsContent = () => (
   <SolutionsContentStyled>
     <p className="smallText">What you are looking for</p>
 
-    <Heading>We provide bespoke solutions</Heading>
+    <LevelContextProvider>
+      <Heading>We provide bespoke solutions</Heading>
+    </LevelContextProvider>
 
     <p className="desc">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum
@@ -30,9 +32,7 @@ export const Solutions = () => (
     <SolutionsContainer padding="0">
       <PeoplePhoto />
 
-      <LevelContextProvider>
-        <SolutionsContent />
-      </LevelContextProvider>
+      <SolutionsContent />
     </SolutionsContainer>
   </SolutionsSection>
 );

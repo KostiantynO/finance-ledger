@@ -3,7 +3,8 @@ import { sizesCard } from 'App/theme';
 import { Heading } from 'components/Chat';
 import { CenteredSection } from 'components/sections/Cases';
 import { Container, Picture } from 'components/shared';
-import { TeamListStyled } from './Team.styled';
+import { LevelContextProvider } from 'features/chat';
+import { TeamItem, TeamListStyled } from './Team.styled';
 import { TeamContextProvider, useTeamContext } from './TeamData';
 
 const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
@@ -18,7 +19,7 @@ const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
   const alt = `${fullName} - ${position}`;
 
   return (
-    <li>
+    <TeamItem>
       <Picture
         webp={webp}
         webp2={webp2x}
@@ -30,9 +31,9 @@ const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
         w2="1280w"
       />
 
-      <p>{fullName}</p>
-      <p>{position}</p>
-    </li>
+      <p className="fullName">{fullName}</p>
+      <p className="position">{position}</p>
+    </TeamItem>
   );
 };
 
@@ -50,21 +51,23 @@ const TeamList = () => {
 
 export const Team = () => (
   <CenteredSection id="team">
-    <Container>
-      <div>
-        <h3 className="smallText">Who we are</h3>
+    <LevelContextProvider>
+      <Container>
+        <div>
+          <h3 className="smallText">Who we are</h3>
 
-        <Heading>Our Professional Team</Heading>
+          <Heading>Our Professional Team</Heading>
 
-        <p className="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-          sapiente!
-        </p>
-      </div>
+          <p className="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            sapiente!
+          </p>
+        </div>
 
-      <TeamContextProvider>
-        <TeamList />
-      </TeamContextProvider>
-    </Container>
+        <TeamContextProvider>
+          <TeamList />
+        </TeamContextProvider>
+      </Container>
+    </LevelContextProvider>
   </CenteredSection>
 );
