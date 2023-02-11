@@ -1,9 +1,14 @@
+import { Chat } from 'components/Chat';
+import { Container, Section } from 'components/shared';
+
 const BlogPage = () => (
-  <div>
-    Blog
-    <br />
-    Page
-  </div>
+  <main>
+    <Section>
+      <Container>
+        <Chat />
+      </Container>
+    </Section>
+  </main>
 );
 
 export default BlogPage;
