@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Section } from 'components/shared';
+import { SectionStyled } from 'components/shared/Section.styled';
 
-export const CasesSection = styled(Section)`
+export const CenteredSection = styled(SectionStyled)`
   text-align: center;
 
   .smallText,

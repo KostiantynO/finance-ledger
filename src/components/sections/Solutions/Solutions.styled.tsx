@@ -54,12 +54,12 @@ export const SolutionsContentStyled = styled.div`
     }
   }
 
-  .description {
+  .desc {
     margin-bottom: 24px;
   }
 
   .smallText,
-  .description {
+  .desc {
     font-size: 16px;
     line-height: 22px;
 

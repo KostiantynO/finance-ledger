@@ -1,9 +1,9 @@
 import { Container } from 'components/shared';
-import { CasesSection } from './Cases.styled';
+import { CenteredSection } from './Cases.styled';
 import { CasesList } from './CasesList';
 
 export const Cases = () => (
-  <CasesSection id="cases">
+  <CenteredSection id="cases">
     <Container>
       <p className="smallText">This is what we do</p>
       <h2 className="title">Business Cases</h2>
@@ -14,5 +14,5 @@ export const Cases = () => (
 
       <CasesList />
     </Container>
-  </CasesSection>
+  </CenteredSection>
 );
