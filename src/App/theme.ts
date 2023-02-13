@@ -11,10 +11,13 @@ export const bp: Breakpoint = {
 const { mobile, tablet, desktop } = bp;
 
 const tabletAndDesktop =
-  `(min-width: ${desktop}) 421px, 100vw, (min-width: ${tablet}) 223px` as const;
+  `(min-width: ${desktop}) 421px, (min-width: ${tablet}) 223px, 100vw` as const;
+
+export const sizesPictureFullScreenOnMobile =
+  `(min-width: ${desktop}) 670px, (min-width: ${tablet}) 368px, 100vw` as const;
 
 export const sizesCard = `${tabletAndDesktop}, 280px` as const;
-export const sizesCadFullScreen = `${tabletAndDesktop}, ${mobile}` as const;
+export const sizesCardFullScreen = `${tabletAndDesktop}, ${mobile}` as const;
 
 const color: Color = {
   accent: '#28A745',

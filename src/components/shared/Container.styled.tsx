@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.div.attrs(({ padding }: { padding?: string }) =>
-  padding ? { padding } : {}
+export const Container = styled.div.attrs(
+  ({ $padding }: { $padding?: string }) => ({ $padding })
 )`
   max-width: ${({ theme }) => theme.bp.mobile};
   margin: 0 auto;
-  padding: ${({ padding }) => padding ?? '0 20px'};
+  padding: ${({ $padding }) => $padding ?? '0 20px'};
 
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     max-width: ${({ theme }) => theme.bp.tablet};

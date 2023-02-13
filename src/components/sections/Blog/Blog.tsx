@@ -3,7 +3,11 @@ import { routes } from 'common';
 import { ButtonOutlined } from 'components/Button';
 import { Heading } from 'components/Chat';
 import { LevelContextProvider } from 'features/chat';
-import { BlogContainer, BlogContentStyled, BlogSection } from './Blog.styled';
+import {
+  BlogContentStyled,
+  BlogSection,
+  ContainerPhotoRight,
+} from './Blog.styled';
 import { BlogPhoto } from './BlogPhoto';
 
 const { blog } = routes;
@@ -39,10 +43,10 @@ const BlogContent = () => (
 
 export const Blog = () => (
   <BlogSection id="blog">
-    <BlogContainer padding="0">
+    <ContainerPhotoRight $padding="0">
       <BlogContent />
 
       <BlogPhoto />
-    </BlogContainer>
+    </ContainerPhotoRight>
   </BlogSection>
 );

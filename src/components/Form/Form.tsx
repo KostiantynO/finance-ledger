@@ -1,5 +1,6 @@
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
+import { Heading } from 'components/Chat';
 import { postContact } from 'features/contacts';
 import { Field } from './Field';
 import { ErrorMessage, Label } from './Label';
@@ -26,14 +27,14 @@ export const Form = () => {
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <form id="contact" onSubmit={handleSubmit(onSubmit)}>
-      <h2>Request Callback</h2>
+      <Heading className="callbackHeading">Request Callback</Heading>
 
       <Field>
         <Label>
           Name:
           <input
-            type="text"
             placeholder="Enter your name"
+            type="text"
             {...register('name', {
               required,
               maxLength: { value: 180, message: 'max length is 180' },
@@ -48,8 +49,8 @@ export const Form = () => {
         <Label>
           Email:
           <input
-            type="email"
             placeholder="Enter email*"
+            type="email"
             {...register('email', {
               required,
               maxLength: { value: 180, message: 'max length is 180' },

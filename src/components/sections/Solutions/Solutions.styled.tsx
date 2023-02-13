@@ -3,7 +3,7 @@ import { Container } from 'components/shared';
 
 export const SolutionsSection = styled.section``;
 
-export const SolutionsContainer = styled(Container)`
+export const ContainerPhotoLeft = styled(Container)`
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     display: grid;
     grid-template-columns: 368px 1fr;
@@ -17,9 +17,9 @@ export const SolutionsContainer = styled(Container)`
 `;
 
 export const SolutionsContentStyled = styled.div`
-  padding: 79px 20px;
+  padding: 52px 20px;
 
-  min-height: 562px;
+  min-height: 466px;
 
   color: ${({ theme }) => theme.color.white};
 
@@ -30,7 +30,7 @@ export const SolutionsContentStyled = styled.div`
     padding: 62px 32px;
   }
 
-  @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
+  @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
     min-height: 460px;
     padding: 62px 32px;
   }

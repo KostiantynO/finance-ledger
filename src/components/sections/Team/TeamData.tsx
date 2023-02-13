@@ -46,7 +46,7 @@ const teamArr: ISpecialist[] = [
     },
   },
   {
-    name: 'Steve Smith',
+    name: 'Steve',
     surname: 'Smith',
     position: 'Marketing Head',
     photos: {

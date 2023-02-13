@@ -3,7 +3,7 @@ import { Heading } from 'components/Chat';
 import { LevelContextProvider } from 'features/chat';
 import { PeoplePhoto } from './PeoplePhoto';
 import {
-  SolutionsContainer,
+  ContainerPhotoLeft,
   SolutionsContentStyled,
   SolutionsSection,
 } from './Solutions.styled';
@@ -29,10 +29,10 @@ const SolutionsContent = () => (
 
 export const Solutions = () => (
   <SolutionsSection id="about">
-    <SolutionsContainer padding="0">
+    <ContainerPhotoLeft $padding="0">
       <PeoplePhoto />
 
       <SolutionsContent />
-    </SolutionsContainer>
+    </ContainerPhotoLeft>
   </SolutionsSection>
 );

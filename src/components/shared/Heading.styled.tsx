@@ -11,4 +11,8 @@ export const HeadingStyled = styled.h1`
     font-size: 40px;
     line-height: 48px;
   }
+
+  &.callbackHeading {
+    color: ${({ theme }) => theme.color.main};
+  }
 `;

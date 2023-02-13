@@ -35,7 +35,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
     "tsconfigRootDir": ".",
-    "project": ["./tsconfig.json"]
+    "project": ["tsconfig.json"],
+    "createDefaultProgram": true
   },
   "plugins": [],
   "settings": {
@@ -55,6 +56,7 @@
         "ignoreDeclarationSort": true
       }
     ],
+
     "import/order": [
       "error",
       {
@@ -84,9 +86,10 @@
       }
     ],
 
-    "no-restricted-imports": "error",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    // "@typescript-eslint/explicit-function-return-type": "warn",
     "@typescript-eslint/no-unnecessary-condition": "off",
     "@typescript-eslint/no-misused-promises": [
       "error",
@@ -110,6 +113,15 @@
       "warn",
       { "forbidDefaultForRequired": true, "functions": "ignore" }
     ],
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ],
 
     "jsx-a11y/label-has-associated-control": [
       "error",
@@ -119,7 +131,9 @@
         "controlComponents": ["input"]
       }
     ],
+
     "object-shorthand": "error",
+    "no-restricted-imports": "error",
     "no-shadow": "error",
     "no-console": "warn"
   }

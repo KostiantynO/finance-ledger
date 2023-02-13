@@ -52,14 +52,14 @@ export const GlobalStyle = styled.createGlobalStyle`
 
   html {
     scrollbar-gutter: stable;
-    scroll-padding-top: 120px; // header height
+    scroll-padding-top: 118px; // header height
 
     @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
-      scroll-padding-top: 80px;
+      scroll-padding-top: 116px;
     }
 
     @media screen and (min-width: ${({ theme }) => theme.bp.desktop}) {
-      scroll-padding-top: 112px;
+      scroll-padding-top: 147px;
     }
 
     @media screen and (prefers-reduced-motion: no-preference) {

@@ -4,7 +4,7 @@ import { SolutionsContentStyled } from '../Solutions';
 
 export const BlogSection = styled.section``;
 
-export const BlogContainer = styled(Container)`
+export const ContainerPhotoRight = styled(Container)`
   @media screen and (min-width: ${({ theme }) => theme.bp.tablet}) {
     display: grid;
     grid-template-columns: 368px 1fr;

@@ -9,7 +9,7 @@ interface SectionProps {
 }
 
 export const Section = ({ id, isFancy, children }: SectionProps) => (
-  <SectionStyled id={id} $isFancy={isFancy}>
+  <SectionStyled $isFancy={isFancy} id={id}>
     <LevelContextProvider>{children}</LevelContextProvider>
   </SectionStyled>
 );

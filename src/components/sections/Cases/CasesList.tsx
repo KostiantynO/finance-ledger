@@ -94,14 +94,14 @@ export const CasesList = () => {
         return (
           <li key={id}>
             <Picture
-              sizes={sizesCard}
-              webp={webp}
-              webp2={webp2x}
+              alt={alt}
               jpg={jpg}
               jpg2={jpg2x}
-              alt={alt}
-              w="640w"
-              w2="1280w"
+              sizes={sizesCard}
+              w="670w"
+              w2="1340w"
+              webp={webp}
+              webp2={webp2x}
             />
           </li>
         );

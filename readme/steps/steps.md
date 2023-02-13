@@ -80,3 +80,12 @@ yarn add react-hook-form
 yarn add -D eslint-plugin-simple-import-sort
 yarn remove eslint-plugin-simple-import-sort
 ```
+
+`2023-02-13 00:28`
+
+```bash
+yarn add -D tslint-config-prettier stylelint stylelint-config-standard
+yarn remove stylelint stylelint-config-standard
+yarn remove lint-staged husky
+npx mrm@2 lint-staged
+```

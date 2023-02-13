@@ -21,14 +21,14 @@ const Specialist = ({ specialistId }: { specialistId: EntityId }) => {
   return (
     <TeamItem>
       <Picture
-        webp={webp}
-        webp2={webp2x}
+        alt={alt}
         jpg={jpg}
         jpg2={jpg2x}
-        alt={alt}
         sizes={sizesCard}
-        w="640w"
-        w2="1280w"
+        w="670w"
+        w2="1340w"
+        webp={webp}
+        webp2={webp2x}
       />
 
       <p className="fullName">{fullName}</p>

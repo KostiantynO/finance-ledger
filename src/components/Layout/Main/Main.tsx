@@ -6,16 +6,19 @@ import {
   Solutions,
   Team,
 } from 'components/sections';
+import { LevelContextProvider } from 'features/chat';
 
 import { MainStyled } from './Main.styled';
 
 export const Main = () => (
   <MainStyled>
-    <Hero />
-    <Solutions />
-    <Cases />
-    <Blog />
-    <Team />
-    <Callback />
+    <LevelContextProvider>
+      <Hero />
+      <Solutions />
+      <Cases />
+      <Blog />
+      <Team />
+      <Callback />
+    </LevelContextProvider>
   </MainStyled>
 );
